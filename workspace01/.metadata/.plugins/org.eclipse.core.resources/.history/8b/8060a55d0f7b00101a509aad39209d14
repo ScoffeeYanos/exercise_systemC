@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../05_lab_smart_pointer/main.cpp \
+../05_lab_smart_pointer/vehicles.cpp 
+
+OBJS += \
+./05_lab_smart_pointer/main.o \
+./05_lab_smart_pointer/vehicles.o 
+
+CPP_DEPS += \
+./05_lab_smart_pointer/main.d \
+./05_lab_smart_pointer/vehicles.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+05_lab_smart_pointer/%.o: ../05_lab_smart_pointer/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

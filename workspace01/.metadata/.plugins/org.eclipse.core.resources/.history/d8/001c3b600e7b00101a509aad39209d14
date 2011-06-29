@@ -1,0 +1,7 @@
+# adopt this to your needs (put the source files of your project here)
+SRCS	=   complex.cpp main.cpp
+
+# adopt this to your needs (put the name of the executable here)
+EXE	=   stl.x
+
+include ../../Makefile.defs

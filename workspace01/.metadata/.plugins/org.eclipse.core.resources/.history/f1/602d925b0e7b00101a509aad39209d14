@@ -1,0 +1,7 @@
+# adopt this to your needs (put the source files of your project here)
+SRCS	= main_vector.cpp
+
+# adopt this to your needs (put the name of the executable here)
+EXE	=   tst_vector.x    
+
+include ../Makefile.defs

@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../01_lab_intro/main.cpp \
+../01_lab_intro/vector.cpp 
+
+OBJS += \
+./01_lab_intro/main.o \
+./01_lab_intro/vector.o 
+
+CPP_DEPS += \
+./01_lab_intro/main.d \
+./01_lab_intro/vector.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+01_lab_intro/%.o: ../01_lab_intro/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
