@@ -1,3 +1,4 @@
+#include <cmath>
 #include "vehicles.h"
 
 vehicle::vehicle(color col) : _col(col)
