@@ -1,3 +1,4 @@
+#include <cmath>
 #include "vehicles.h"
 
 vehicle::vehicle(color col) : _col(col)
@@ -24,7 +25,7 @@ double car::get_speed() const
   return sqrt(_vx*_vx + _vy*_vy);
 }
 
-char* car::get_type() const
+const char *car::get_type() const
 {
   return "car";
 }
@@ -46,7 +47,7 @@ double jet::get_speed() const
   return sqrt(_vx*_vx + _vy*_vy + _vz*_vz);
 }
 
-char* jet::get_type() const
+const char *jet::get_type() const
 {
   return "jet";
 }

@@ -32,7 +32,7 @@ class vehicle
     vehicle(color col);
     color get_color() const;
     virtual double get_speed() const = 0;
-    virtual char* get_type() const = 0;
+    virtual const char *get_type() const = 0;
   protected:
     color _col;
 };
@@ -50,7 +50,7 @@ class car : public vehicle
     car(color col);
     void set_speed(double vx, double vy);
     double get_speed() const;
-    virtual char* get_type() const;
+    virtual const char *get_type() const;
   protected:
     double _vx;
     double _vy;
@@ -64,7 +64,7 @@ class jet : public vehicle
     jet(color col);
     void set_speed(double vx, double vy, double vz);
     double get_speed() const;
-    virtual char* get_type() const;
+    virtual const char *get_type() const;
   protected:
     double _vx;
     double _vy;
