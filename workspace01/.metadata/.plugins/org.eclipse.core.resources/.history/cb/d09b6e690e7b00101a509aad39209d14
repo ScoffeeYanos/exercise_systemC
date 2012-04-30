@@ -1,7 +1,0 @@
-# adopt this to your needs (put the source files of your project here)
-SRCS	=   vehicles.cpp main.cpp
-
-# adopt this to your needs (put the name of the executable here)
-EXE	=   smart_ptr.x
-
-include ../../Makefile.defs

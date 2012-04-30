@@ -1,7 +1,0 @@
-# adopt this to your needs (put the source files of your project here)
-SRCS	= main_graph_obj.cpp
-
-# adopt this to your needs (put the name of the executable here)
-EXE	=   tst_graph_obj.x
-
-include ../Makefile.defs

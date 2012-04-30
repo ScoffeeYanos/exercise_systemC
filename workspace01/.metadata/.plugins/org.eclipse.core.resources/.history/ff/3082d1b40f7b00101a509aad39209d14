@@ -1,7 +1,0 @@
-05_lab_smart_pointer/main.d 05_lab_smart_pointer/main.o: \
- ../05_lab_smart_pointer/main.cpp ../05_lab_smart_pointer/smart_ptr.h \
- ../05_lab_smart_pointer/vehicles.h
-
-../05_lab_smart_pointer/smart_ptr.h:
-
-../05_lab_smart_pointer/vehicles.h:

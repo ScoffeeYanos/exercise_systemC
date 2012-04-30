@@ -1,4 +1,0 @@
-05_lab_smart_pointer/vehicles.d 05_lab_smart_pointer/vehicles.o: \
- ../05_lab_smart_pointer/vehicles.cpp ../05_lab_smart_pointer/vehicles.h
-
-../05_lab_smart_pointer/vehicles.h:

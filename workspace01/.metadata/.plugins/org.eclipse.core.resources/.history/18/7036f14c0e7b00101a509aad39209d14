@@ -1,8 +1,0 @@
-# adopt this to your needs (put the source files of your project here)
-SRCS	=   vector.cpp \
-	    main.cpp
-
-# adopt this to your needs (put the name of the executable here)
-EXE	=   lab_intro.x
-
-include ../Makefile.defs
