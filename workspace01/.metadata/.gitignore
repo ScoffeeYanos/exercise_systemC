@@ -9,6 +9,7 @@ dialog_settings.xml
 .plugins/org.eclipse.wb.discovery.core
 .plugins/org.eclipse.epp.usagedata.recording
 .plugins/org.eclipse.m2e.logback.configuration
+.plugins/org.eclipse.linuxtools.cdt.libhover
 .plugins/org.eclipse.ltk.core.refactoring
 .plugins/org.eclipse.team.*
 .plugins/org.eclipse.cdt.*
