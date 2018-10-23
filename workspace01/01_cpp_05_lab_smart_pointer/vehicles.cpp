@@ -9,6 +9,9 @@ color vehicle::get_color() const
   return _col;
 }
 
+vehicle::~vehicle() {
+}
+
 car::car(color col) : vehicle(col)
 {
   _vx = _vy = 0;

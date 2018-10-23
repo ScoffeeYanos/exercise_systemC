@@ -33,6 +33,7 @@ class vehicle
     color get_color() const;
     virtual double get_speed() const = 0;
     virtual const char *get_type() const = 0;
+    virtual ~vehicle();
   protected:
     color _col;
 };
