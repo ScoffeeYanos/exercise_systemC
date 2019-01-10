@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList/>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_Uya50ta9EeiAi-bO9AiPPQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_VTQ9Eda9EeiAi-bO9AiPPQ" label="%trimmedwindow.label.eclipseSDK" x="427" y="132" width="1179" height="854">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_Uya50ta9EeiAi-bO9AiPPQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_VTQ9Eda9EeiAi-bO9AiPPQ" label="%trimmedwindow.label.eclipseSDK" x="3028" y="266" width="1171" height="819">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -78,7 +78,6 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_VgvYYda9EeiAi-bO9AiPPQ" selectedElement="_VgvYYta9EeiAi-bO9AiPPQ" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_VgvYYta9EeiAi-bO9AiPPQ" elementId="topLeft" containerData="2500" selectedElement="_VgvYY9a9EeiAi-bO9AiPPQ">
               <tags>active</tags>
-              <tags>noFocus</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_VgvYY9a9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_VgaoQNa9EeiAi-bO9AiPPQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_VgvYZNa9EeiAi-bO9AiPPQ" elementId="org.eclipse.cdt.ui.CView" toBeRendered="false" ref="_VgcdcNa9EeiAi-bO9AiPPQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_VgvYZda9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_Vgcdcda9EeiAi-bO9AiPPQ"/>
@@ -252,7 +251,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VVM2wNa9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Z3D4YNa9EeilZe7TWTdeNQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UzDzJ9a9EeiAi-bO9AiPPQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6D9zIBTWEemx-9-zuOAeKQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UzDzJ9a9EeiAi-bO9AiPPQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VVNd0Na9EeiAi-bO9AiPPQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -279,7 +278,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VVNd1Na9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Z3FtkNa9EeilZe7TWTdeNQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_UzDMANa9EeiAi-bO9AiPPQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6EAPYBTWEemx-9-zuOAeKQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_UzDMANa9EeiAi-bO9AiPPQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_VVSWUNa9EeiAi-bO9AiPPQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1097,6 +1096,7 @@
         <children xmi:id="_UzHdcta9EeiAi-bO9AiPPQ" elementId="org.eclipse.jdt.debug.ui.debugging" name="Debugging Java" description="Debugging Java programs"/>
         <children xmi:id="_UzHdc9a9EeiAi-bO9AiPPQ" elementId="org.eclipse.cdt.debug.ui.debugging" name="Debugging C/C++" description="Debugging C/C++ Programs"/>
         <children xmi:id="_UzHddda9EeiAi-bO9AiPPQ" elementId="org.eclipse.dltk.debug.ui.debugging" name="Debugging Script" description="Context available during script debugging"/>
+        <children xmi:id="_5mLq8BTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.debug.ui.debugging" name="Debugging using Target Communication Framework" description="Debugging using Target Communication Framework"/>
       </children>
       <children xmi:id="_UzHddNa9EeiAi-bO9AiPPQ" elementId="org.eclipse.egit.ui.ReflogView" name="In Git Reflog View"/>
       <children xmi:id="_UzHddta9EeiAi-bO9AiPPQ" elementId="org.eclipse.tm.terminal.TerminalContext" name="Terminal Typing Connected" description="Override ALT+x menu access keys while typing into the Terminal"/>
@@ -2211,6 +2211,18 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.codehaus.groovy.eclipse.astviews"/>
     <tags>View</tags>
     <tags>categoryTag:Groovy</tags>
+  </descriptors>
+  <descriptors xmi:id="_5pdocBTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.TraceView" label="TCF Trace" iconURI="platform:/plugin/org.eclipse.tcf.debug.ui/icons/tcf.gif" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.tcf.internal.debug.ui.trace.TraceView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.tcf.debug.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Debug</tags>
+  </descriptors>
+  <descriptors xmi:id="_5pfdoBTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.ProfilerView" label="TCF Profiler" iconURI="platform:/plugin/org.eclipse.tcf.debug.ui/icons/profiler.png" tooltip="" category="Debug" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.eclipse.tcf.internal.debug.ui.profiler.ProfilerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.tcf.debug.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Debug</tags>
   </descriptors>
   <menuContributions xmi:id="_Uybg4Na9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" positionInParent="popup:toolbar">
     <children xsi:type="menu:HandledMenuItem" xmi:id="_Uybg4da9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" label="%command.name.customize" command="_Uybg4ta9EeiAi-bO9AiPPQ"/>
@@ -3739,6 +3751,15 @@
   <commands xmi:id="_VSe58da9EeiAi-bO9AiPPQ" elementId="AUTOGEN:::org.python.pydev.debug.VariableViewActions/org.python.pydev.debug.variableViewActions.ShowCapitalizedReferences" commandName="Show Capitalized References" description="Show Capitalized References (those beginning with an uppercase letter)" category="_Uy7QQda9EeiAi-bO9AiPPQ"/>
   <commands xmi:id="_VSe58ta9EeiAi-bO9AiPPQ" elementId="AUTOGEN:::org.python.pydev.debug.VariableViewActions/org.python.pydev.debug.variableViewActions.ShowAllUppercaseReferences" commandName="Show All Uppercase References" description="Show All Uppercase References (those with no lower case letters)" category="_Uy7QQda9EeiAi-bO9AiPPQ"/>
   <commands xmi:id="_VSe589a9EeiAi-bO9AiPPQ" elementId="AUTOGEN:::org.python.pydev.debug.VariableViewActions/org.python.pydev.debug.variableViewActions.ShowFunctionAndModulsReferences" commandName="Show Function and Module References" description="Show Function and Module References" category="_Uy7QQda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1wBTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.debug.ui.commands.toggleFilterVariants" commandName="Filter Variants by Discriminant Value" category="_5mJOsRTWEemx-9-zuOAeKQ"/>
+  <commands xmi:id="_5mJ1wRTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.te.tcf.launch.ui.remote.app.command.run" commandName="Run Remote Application" category="_Uy7QZda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1whTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.te.tcf.launch.ui.command.runtests" commandName="Run Diagnostics Tests" category="_Uy7QZda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1wxTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.cdt.ui.add_watchpoint" commandName="Add Watchpoint (C/C++)" description="Allows to add a new watchpoint on an arbitrary symbol" category="_Uy7QOda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1xBTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.te.tcf.launch.ui.command.runtestsloop" commandName="Run Diagnostics Tests Loop" category="_Uy7QZda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1xRTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.cdt.debug.ui.command.breakpointCategoryProperties" commandName="Breakpoint Scope Properties" description="Edits the breakpoint scope settings of the given group of breakpoints. " category="_Uy7QQda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1xhTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.te.tcf.launch.ui.remote.app.command.debug" commandName="Debug Remote Application" category="_Uy7QZda9EeiAi-bO9AiPPQ"/>
+  <commands xmi:id="_5mJ1xxTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.debug.ui.commands.toggleQualifiedTypeNames" commandName="Show Qualified Type Names" category="_5mJOsRTWEemx-9-zuOAeKQ"/>
+  <commands xmi:id="_5mJ1yBTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.debug.ui.commands.refresh" commandName="Refresh" category="_5mJOsRTWEemx-9-zuOAeKQ"/>
   <addons xmi:id="_Uybg49a9EeiAi-bO9AiPPQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_Uybg5Na9EeiAi-bO9AiPPQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_Uybg5da9EeiAi-bO9AiPPQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3750,7 +3771,7 @@
   <addons xmi:id="_Uybg69a9EeiAi-bO9AiPPQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_Uybg7Na9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_UyhngNa9EeiAi-bO9AiPPQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_ZjxI8da9EeilZe7TWTdeNQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_Uy6pENa9EeiAi-bO9AiPPQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_Uy6pEda9EeiAi-bO9AiPPQ" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
@@ -3829,4 +3850,5 @@
   <categories xmi:id="_Uy7QaNa9EeiAi-bO9AiPPQ" elementId="org.eclipse.cdt.debug.ui.category.reverseDebugging" name="Reverse Debugging Commands" description="Set of commands for Reverse Debugging"/>
   <categories xmi:id="_Uy7Qada9EeiAi-bO9AiPPQ" elementId="org.eclipse.dltk.ui.category.refactoring" name="Refactor - DLTK" description="DLTK Refactoring Actions"/>
   <categories xmi:id="_Uy7Qata9EeiAi-bO9AiPPQ" elementId="org.eclipse.cdt.debug.ui.category.tracing" name="Tracing Commands" description="Category for Tracing Commands"/>
+  <categories xmi:id="_5mJOsRTWEemx-9-zuOAeKQ" elementId="org.eclipse.tcf.debug.ui.commands" name="TCF Debugger" description="TCF Debugger Commands"/>
 </application:Application>
