@@ -13,7 +13,6 @@
  * on an AS IS basis WITHOUT WARRANTY OF ANY KIND, either express or implied. 
  * 
  * =============================================================================
-
  * $Id: main_graph_obj.cpp,v 1.2 2006/03/28 11:41:04 systemC Exp $
  * $Log: main_graph_obj.cpp,v $
  * Revision 1.2  2006/03/28 11:41:04  systemC
@@ -29,25 +28,23 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main()
 {
   rect x(1,2);
-  cout << "area: " << x.area() << endl;
+  std::cout << "area: " << x.area() << std::endl;
 
-  cout << "---------------------------------" << endl;
+  std::cout << "---------------------------------" << std::endl;
 
   circle c(1);
-  cout << "area: " << c.area() << endl;
+  std::cout << "area: " << c.area() << std::endl;
 
-  cout << "---------------------------------" << endl;
+  std::cout << "---------------------------------" << std::endl;
 
   graph_obj* g_ptr = new circle(2);
-  cout << "area: " << g_ptr->area() << endl;
+  std::cout << "area: " << g_ptr->area() << std::endl;
   delete g_ptr;
 
-  cout << "---------------------------------" << endl;
+  std::cout << "---------------------------------" << std::endl;
 
   return 0;
 }

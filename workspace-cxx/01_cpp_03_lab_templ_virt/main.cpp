@@ -13,7 +13,6 @@
  * on an AS IS basis WITHOUT WARRANTY OF ANY KIND, either express or implied. 
  * 
  * =============================================================================
-
  * $Id: main.cpp,v 1.2 2006/03/28 11:41:04 systemC Exp $
  * $Log: main.cpp,v $
  * Revision 1.2  2006/03/28 11:41:04  systemC
@@ -30,8 +29,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 // test bench 
 int main()
 {
@@ -39,13 +36,13 @@ int main()
   //       the elements should have width=1, height=2
   // ???
 
-  cout << "-------------------------" << endl;
+  std::cout << "-------------------------" << std::endl;
 
   // TASK: instantiate a vector of circ with 3 elements
   //       the elements should have radius=2
   // ???
 
-  cout << "-------------------------" << endl;
+  std::cout << "-------------------------" << std::endl;
 
   return 0;
 }

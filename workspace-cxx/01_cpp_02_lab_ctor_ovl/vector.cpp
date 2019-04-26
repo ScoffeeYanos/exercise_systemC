@@ -13,7 +13,6 @@
  * on an AS IS basis WITHOUT WARRANTY OF ANY KIND, either express or implied. 
  * 
  * =============================================================================
-
  * $Id: vector.cpp,v 1.2 2006/03/28 11:41:04 systemC Exp $
  * $Log: vector.cpp,v $
  * Revision 1.2  2006/03/28 11:41:04  systemC
@@ -29,8 +28,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 vector::vector(int size /*= 16 ??? */ ) 
 {
   _size = size;
@@ -39,17 +36,17 @@ vector::vector(int size /*= 16 ??? */ )
   // TASK: implement initialization of vector elements to init_val
   // ???
 
-  cout << "vector of size: " << _size << " created [ ";
+  std::cout << "vector of size: " << _size << " created [ ";
   for(int idx = 0; idx < _size;++idx) {
-    cout << _buf[idx] << " ";
+    std::cout << _buf[idx] << " ";
   }
-  cout << " ]" << endl;
+  std::cout << " ]" << std::endl;
 }
 
 vector::~vector() 
 {
   delete [] _buf;
-  cout << "vector of size: " << _size << " deleted" << endl;
+  std::cout << "vector of size: " << _size << " deleted" << std::endl;
 }
 
 // TASK: implement reading from vector with range check
@@ -107,5 +104,5 @@ void vector::dump(ostream& os) const
   for(int idx = 0;idx < _size;++idx) {
     os << _buf[idx] << " ";
   }
-  os << " ]" << endl;
+  os << " ]" << std::endl;
 }

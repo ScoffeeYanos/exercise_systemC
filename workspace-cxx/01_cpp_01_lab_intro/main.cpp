@@ -13,7 +13,6 @@
  * on an AS IS basis WITHOUT WARRANTY OF ANY KIND, either express or implied. 
  * 
  * =============================================================================
-
  * $Id: main.cpp,v 1.1.1.1 2002/09/03 09:30:30 systemC Exp $
  * $Log: main.cpp,v $
  * Revision 1.1.1.1  2002/09/03 09:30:30  systemC

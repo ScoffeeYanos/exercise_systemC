@@ -13,7 +13,6 @@
  * on an AS IS basis WITHOUT WARRANTY OF ANY KIND, either express or implied. 
  * 
  * =============================================================================
-
  * $Id: main.cpp,v 1.2 2006/03/28 11:41:04 systemC Exp $
  * $Log: main.cpp,v $
  * Revision 1.2  2006/03/28 11:41:04  systemC
@@ -27,8 +26,6 @@
 
 #include "vector.h"
 
-using namespace std;
-
 // test bench 
 int main()
 {
@@ -36,27 +33,27 @@ int main()
   vector y(3,2);
   vector z(2,2);
 
-  cout << "-----------------------" << endl;
+  std::cout << "-----------------------" << std::endl;
 
   x += y;
-  x.dump(cout);
+  x.dump(std::cout);
 
-  cout << "-----------------------" << endl;
+  std::cout << "-----------------------" << std::endl;
 
   x += z;
-  x.dump(cout);
+  x.dump(std::cout);
 
-  cout << "-----------------------" << endl;
+  std::cout << "-----------------------" << std::endl;
 
   x.write(-1,0);
   x.write(-1,2);
-  x.dump(cout);
+  x.dump(std::cout);
 
-  cout << "-----------------------" << endl;
+  std::cout << "-----------------------" << std::endl;
 
   x=z;
-  x.dump(cout);
-  z.dump(cout);
+  x.dump(std::cout);
+  z.dump(std::cout);
 
   return 0;
 }
