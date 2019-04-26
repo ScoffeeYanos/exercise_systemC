@@ -98,7 +98,7 @@ vector& vector::operator+=(const vector& rhs)
   // ???
 }
 
-void vector::dump(ostream& os) const
+void vector::dump(std::ostream& os) const
 {
   os << this << " [ ";
   for(int idx = 0;idx < _size;++idx) {
