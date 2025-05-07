@@ -28,81 +28,94 @@
 
 #include <iostream>
 
-vector::vector(int size /*= 16 ??? */ ) 
-{
-  _size = size;
-  _buf = new t_vector[_size];
-  
-  // TASK: implement initialization of vector elements to init_val
-  // ???
+vector::vector(int size /*= 16 ??? */ , int init_val) {
+    _size = size;
+    _buf = new t_vector[_size];
 
-  std::cout << "vector of size: " << _size << " created [ ";
-  for(int idx = 0; idx < _size;++idx) {
-    std::cout << _buf[idx] << " ";
-  }
-  std::cout << " ]" << std::endl;
+    // TASK: implement initialization of vector elements to init_val
+    for (int idx = 0; idx < _size; ++idx) {
+        _buf[idx] = init_val;
+    }
+
+    std::cout << "vector of size: " << _size << " created [ ";
+    for (int idx = 0; idx < _size; ++idx) {
+        std::cout << _buf[idx] << " ";
+    }
+    std::cout << " ]" << std::endl;
 }
 
-vector::~vector() 
-{
-  delete [] _buf;
-  std::cout << "vector of size: " << _size << " deleted" << std::endl;
+vector::~vector() {
+    delete[] _buf;
+    std::cout << "vector of size: " << _size << " deleted" << std::endl;
 }
 
 // TASK: implement reading from vector with range check
-// ???
-
-t_vector vector::read(int idx) const
-{
-  return _buf[idx];
+bool vector::read(int &ref, int idx) const {
+    if (idx >= _size) {
+        return false;
+    }
+    ref = _buf[idx];
+    return true;
 }
 
-bool vector::write(const t_vector& val, int idx) 
-{
-  if( !is_legal_idx(idx) ) {
-    return false;
-  }
-  else {
-    _buf[idx] = val;
-  }
-  return true;
+t_vector vector::read(int idx) const {
+    return _buf[idx];
 }
 
-bool vector::operator==(const vector& rhs) const
-{
-  if(_size != rhs._size)
-    return false;
+bool vector::write(const t_vector &val, int idx) {
+    if (!is_legal_idx(idx)) {
+        return false;
+    } else {
+        _buf[idx] = val;
+    }
+    return true;
+}
 
-  bool result = true;
-  for(int idx = 0;idx < _size;++idx) {
-    result = result && (_buf[idx] == rhs._buf[idx]);
-  }
-  return result;
+bool vector::operator==(const vector &rhs) const {
+    if (_size != rhs._size)
+        return false;
+
+    bool result = true;
+    for (int idx = 0; idx < _size; ++idx) {
+        result = result && (_buf[idx] == rhs._buf[idx]);
+    }
+    return result;
 }
 
 // TASK: finish implementation of operator=
-vector& vector::operator=(const vector& rhs)
-{
-  // do nothing if sizes don't match
-  // ???
-  // assign the two vectors if sizes match
-  // ???
+vector &vector::operator=(const vector &rhs) {
+    // do nothing if sizes don't match
+    // assign the two vectors if sizes match
+
+    if (this == &rhs) {
+        return *this;
+    }
+    if (_size != rhs._size) {
+        return *this;
+    }
+    for (int i = 0; i < _size; ++i) {
+        _buf[i] = rhs._buf[i];
+    }
+    return *this;
 }
 
 // TASK: finish implementation of operator+=
-vector& vector::operator+=(const vector& rhs)
-{
-  // do nothing if sizes don't match
-  // ???
-  // add the two vectors if sizes match
-  // ???
+vector &vector::operator+=(const vector &rhs) {
+    // do nothing if sizes don't match
+    // add the two vectors if sizes match
+    if (_size != rhs._size) {
+        return *this;
+    }
+    for (int idx = 0; idx < _size; ++idx) {
+        _buf[idx] += rhs._buf[idx];
+    }
+    return *this;
 }
 
-void vector::dump(std::ostream& os) const
-{
-  os << this << " [ ";
-  for(int idx = 0;idx < _size;++idx) {
-    os << _buf[idx] << " ";
-  }
-  os << " ]" << std::endl;
+void vector::dump(std::ostream &os) const {
+    os << this << " [ ";
+    for (int idx = 0; idx < _size; ++idx) {
+        os << _buf[idx] << " ";
+    }
+    os << " ]" << std::endl;
 }

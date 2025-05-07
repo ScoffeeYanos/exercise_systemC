@@ -34,13 +34,13 @@ int main()
 {
   // TASK: instantiate a vector of rect with 2 elements
   //       the elements should have width=1, height=2
-  // ???
+  vector<rect>(2,rect(1.0,2.0));
 
   std::cout << "-------------------------" << std::endl;
 
   // TASK: instantiate a vector of circ with 3 elements
   //       the elements should have radius=2
-  // ???
+  vector<circle>(3,circle(2));
 
   std::cout << "-------------------------" << std::endl;
 

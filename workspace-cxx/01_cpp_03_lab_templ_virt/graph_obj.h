@@ -68,7 +68,19 @@ protected:
 // graph_obj and implements the method area(). The constructor should take
 // the radius as an optional argument (default = 0.0) 
 // Hint: don't forget to implement a destructor as well.
-class circle 
+#include <cmath>
+class circle:public graph_obj
 {
- // ???
+public:
+  circle(double radius = 0.0):_radius(radius){
+    std::cout << "circle created" << std::endl;
+  }
+  virtual ~circle() {
+        std::cout << "circle deleted" << std::endl;
+  }
+  virtual double area() const {
+    return M_PI*_radius*_radius;
+  }
+protected:
+  double _radius;
 };

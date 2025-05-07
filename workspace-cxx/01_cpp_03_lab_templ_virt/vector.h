@@ -42,7 +42,7 @@
 // 4. This time no "???" have been provided!!
 
 typedef int t_vector;
-
+template<class T>
 class vector
 {
 public:
@@ -50,17 +50,17 @@ public:
   ~vector();
 
   // read from VECTOR
-  bool read(t_vector& val, int idx) const; // read with range check
-  t_vector read(int idx) const; // fast read without range check
+  bool read(T& val, int idx) const; // read with range check
+  T read(int idx) const; // fast read without range check
 
   // write to VECTOR
-  bool write(const t_vector& val, int idx); // write with range check
+  bool write(const T& val, int idx); // write with range check
   
   // operators
-  bool operator==(const vector& rhs) const;
+  bool operator==(const vector<T>& rhs) const;
 
-  vector& operator=(const vector& rhs);
-  vector& operator+=(const vector& rhs);
+  vector<T>& operator=(const vector<T>& rhs);
+  vector<T>& operator+=(const vector<T>& rhs);
 
   // persisitence and I/O
   void dump(std::ostream& os) const;
@@ -70,7 +70,7 @@ protected:
   bool is_legal_idx(const int& idx) const; // implement the range checking
 
 protected:
-  t_vector* _buf;
+  T* _buf;
   int _size;
 };
 
@@ -79,26 +79,28 @@ inline
 vector<T>::vector(int size, T init_val) 
 {
   _size = size;
-  _buf = new t_vector[_size];
+  _buf = new T[_size];
 
   for(int idx = 0;idx < _size;++idx) {
     _buf[idx] = init_val;
   }
 
-  cout << "vector of size: " << _size << " created [ ";
+  std::cout << "vector of size: " << _size << " created [ ";
   for(int idx = 0; idx < _size;++idx) {
 	std::cout << _buf[idx] << " ";
   }
   std::cout << " ]" << std::endl;
 }
 
-vector::~vector() 
+template< class T >
+vector<T>::~vector()
 {
   delete [] _buf;
   std::cout << "vector of size: " << _size << " deleted" << std::endl;
 }
 
-bool vector::read(t_vector& val, int idx) const 
+template< class T >
+bool vector<T>::read(T& val, int idx) const
 {
   if( !is_legal_idx(idx) ) {
     return false;
@@ -109,12 +111,14 @@ bool vector::read(t_vector& val, int idx) const
   return true;
 }
 
-t_vector vector::read(int idx) const
+template< class T >
+T vector<T>::read(int idx) const
 {
   return _buf[idx];
 }
 
-bool vector::write(const t_vector& val, int idx) 
+template< class T >
+bool vector<T>::write(const T& val, int idx)
 {
   if( !is_legal_idx(idx) ) {
     return false;
@@ -125,7 +129,8 @@ bool vector::write(const t_vector& val, int idx)
   return true;
 }
 
-bool vector::operator==(const vector& rhs) const
+template< class T >
+bool vector<T>::operator==(const vector<T>& rhs) const
 {
   if(_size != rhs._size)
     return false;
@@ -137,7 +142,8 @@ bool vector::operator==(const vector& rhs) const
   return result;
 }
 
-vector& vector::operator=(const vector& rhs)
+template< class T >
+vector<T>& vector<T>::operator=(const vector<T>& rhs)
 {
   // do nothing if sizes don't match
   if(_size != rhs._size)
@@ -149,7 +155,8 @@ vector& vector::operator=(const vector& rhs)
   return *this;
 }
 
-vector& vector::operator+=(const vector& rhs)
+template< class T >
+vector<T>& vector<T>::operator+=(const vector<T>& rhs)
 {
   // do nothing if sizes don't match
   if(_size != rhs._size)
@@ -161,7 +168,8 @@ vector& vector::operator+=(const vector& rhs)
   return *this;
 }
 
-void vector::dump(std::ostream& os) const
+template< class T >
+void vector<T>::dump(std::ostream& os) const
 {
   os << this << " [ ";
   for(int idx = 0;idx < _size;++idx) {
@@ -170,8 +178,9 @@ void vector::dump(std::ostream& os) const
   os << " ]" << std::endl;
 }
 
+template< class T >
 inline 
-bool vector::is_legal_idx(const int& idx) const
+bool vector<T>::is_legal_idx(const int& idx) const
 {
   return ((idx < _size) && (idx >= 0));
 }

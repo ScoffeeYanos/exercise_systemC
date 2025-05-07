@@ -29,12 +29,12 @@ int main()
   vector x;
 
   // TASK: create vectors of size 2,5 and 10
-  // ???
-  // ???
-  // ???
+  vector a(2);
+  vector b(5);
+  vector c(10);
 
   // TASK: can you imagine how to explicitly call the destructor for x ?
-  // ???
+  x.~vector();
 
   return 0;
 }

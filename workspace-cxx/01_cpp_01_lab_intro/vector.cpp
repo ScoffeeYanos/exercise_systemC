@@ -31,11 +31,11 @@ vector::vector(int size)
 {
   _size = size;
   _buf = new t_vector[_size];
-  
+
   for(int idx = 0;idx < _size;++idx) {
-    _buf[idx] = -1;
+      _buf[idx] = -1;
   }
-  
+
   std::cout << "vector of size: " << _size << " created [ ";
   for(int idx = 0; idx < _size;++idx) {
     std::cout << _buf[idx] << " ";

@@ -37,12 +37,13 @@ class vector
 public:
   // TASK: implement a constructor where you can optionally specify
   // the initial value for the vector elements (default = 0)
-  vector(int size = 16 /* ??? */);
+  vector(int size = 16 /* ??? */,int init_val = 0);
   ~vector();
 
   // read from VECTOR
   // TASK: implement reading from vector with range check
   // ???
+  bool read(t_vector &ref, int idx) const; // read with range check
   t_vector read(int idx) const; // fast read without range check
 
   // write to VECTOR
